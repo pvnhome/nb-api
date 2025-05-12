@@ -19,9 +19,6 @@ import jakarta.json.bind.annotation.JsonbDateFormat;
 public class Deal {
    private static final DateTimeFormatter ANSI = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
-   /*
-      Резидент не резидент -- думаю булево
-   */
    @Schema(type = SchemaType.INTEGER, format = "int64", description = "Уникальный код сделки в информационной системе НБ.")
    public Long id;
    @Schema(type = SchemaType.STRING, format = "date", description = "Дата и время сделки в формате \"yyyy-MM-ddTHH:mm:ss\"")
