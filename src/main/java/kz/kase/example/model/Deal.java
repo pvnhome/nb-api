@@ -41,7 +41,7 @@ public class Deal {
    @Schema(type = SchemaType.STRING, format = "date", description = "Дата оплаты в формате \"yyyy-MM-dd\"")
    @JsonbDateFormat("yyyy-MM-dd")
    public LocalDate paymentDate;
-   @Schema(type = SchemaType.BOOLEAN, description = "Резидент не резидент")
+   @Schema(type = SchemaType.BOOLEAN, description = "Резидент или не резидент")
    public Boolean resident;
 
    public Deal() {
